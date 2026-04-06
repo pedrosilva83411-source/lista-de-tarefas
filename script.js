@@ -135,7 +135,6 @@ function atualizarBotoesFiltro() {
   });
 }
 
-// Event listeners dos filtros (UMA VEZ SÓ)
 botoesFiltro.forEach((botao) => {
   botao.addEventListener("click", () => {
     filtroAtual = botao.dataset.filtro;
@@ -144,7 +143,7 @@ botoesFiltro.forEach((botao) => {
   });
 });
 
-// CARREGAR TAREFAS AO INICIAR (UMA VEZ SÓ)
+// CARREGAR TAREFAS AO INICIAR
 function carregarTarefas() {
   const salvas = localStorage.getItem("tarefas");
   if (salvas) {
