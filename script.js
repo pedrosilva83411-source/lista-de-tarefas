@@ -141,7 +141,7 @@ botoesFiltro.forEach((botao) => {
     atualizarBotoesFiltro();
     renderizarTarefas();
   });
-});
+}); 
 
 // CARREGAR TAREFAS AO INICIAR
 function carregarTarefas() {

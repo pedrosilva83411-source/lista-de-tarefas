@@ -11,7 +11,7 @@ App simples de lista de tarefas com:
 - HTML5
 - CSS3  
 - JavaScript
-
+ 
 ## Como usar
 1. Clone o repositório
 2. Abra o index.html no navegador
