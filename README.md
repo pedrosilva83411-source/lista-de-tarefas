@@ -17,4 +17,4 @@ App simples de lista de tarefas com:
 2. Abra o index.html no navegador
 
 ## Autor
-Pedro Silva" > README.md
+Pedro Silva > README.md
