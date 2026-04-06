@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do App</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- TÍTULO -->
+    <header>
+      <h1>Lista de Tarefas</h1>
+    </header>
+
+    <!-- INPUT + BOTÃO -->
+    <section class="add-tarefa">
+      <input 
+        type="text" 
+        id="inputTarefa" 
+        placeholder="Digite uma tarefa..."
+      >
+      <button id="btnAdicionar">Adicionar</button>
+    </section>
+
+    <!-- FILTROS (BÔNUS / PORTFÓLIO) -->
+    <section class="filtros">
+      <button data-filtro="todas">Todas</button>
+      <button data-filtro="pendentes">Pendentes</button>
+      <button data-filtro="concluidas">Concluídas</button>
+    </section>
+
+    <!-- CONTADOR -->
+    <section class="contador">
+      <p>Total: <span id="total">0</span></p>
+      <p>Concluídas: <span id="concluidas">0</span></p>
+      <p>Pendentes: <span id="pendentes">0</span></p>
+    </section>
+
+    <!-- LISTA DE TAREFAS -->
+    <section class="lista-container">
+      <ul id="listaTarefas">
+        <!-- JS vai inserir as tarefas aqui -->
+      </ul>
+    </section>
+
+  </div>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>

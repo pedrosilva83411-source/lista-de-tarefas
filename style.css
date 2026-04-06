@@ -1,0 +1,159 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* BODY */
+body {
+  background: #0f172a;
+  color: #e2e8f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* CONTAINER */
+.container {
+  background: #1e293b;
+  padding: 25px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* HEADER */
+header h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* INPUT + BOTÃO */
+.add-tarefa {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.add-tarefa input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.add-tarefa button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #22c55e;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.add-tarefa button:hover {
+  background: #16a34a;
+}
+
+/* FILTROS */
+.filtros {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.filtros button {
+  flex: 1;
+  margin: 0 3px;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  background: #334155;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.filtros button:hover {
+  background: #475569;
+}
+
+.filtros button.filtro-atual{
+  background-color: #22c55e;
+  color: white;
+  font-weight: bold;
+}
+
+/* CONTADOR */
+.contador {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+/* LISTA */
+.lista-container ul {
+  list-style: none;
+}
+
+/* ITEM DA TAREFA */
+.lista-container li {
+  background: #334155;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* TEXTO */
+.lista-container li span {
+  cursor: pointer;
+}
+
+/* TAREFA CONCLUÍDA */
+.concluida {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* BOTÃO EXCLUIR */
+.btn-remover {
+  background: #ef4444;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-remover:hover {
+  background: #dc2626;
+}
+
+/* RESPONSIVO */
+@media (max-width: 500px) {
+  .container {
+    margin: 10px;
+    padding: 20px;
+  }
+
+  .contador {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .filtros {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
